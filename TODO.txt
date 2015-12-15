@@ -1,0 +1,18 @@
+/////////GENERATOR//////////
+Parametre exigés: DBHost DBUser DBPass DBName tableName className
+
+Le generator s'execute par la console;
+une fois les parametres renseignées, une fonction récursive se lance;
+cette fonction demande les champs a renseigner dans la table (sans l'ID);
+Si champ vide, arrete la boucle.
+Une fois terminé, crée le fichier classe dans le repertoire /Model
+
+///////////ORM//////////////
+
+L'ORM permet de :
+Generer un modele SQL a partir des classes
+effectuer des request de bases (CRUD)
+Les request sont sur le modèle d'un SQLBuilder:
+    la base est un simple select *
+    en fonction des fonctions utilisés, se rajoute des parametres (Ex: findAllById -> rajoute un Where), et le from en fonction des nom de classe
+
