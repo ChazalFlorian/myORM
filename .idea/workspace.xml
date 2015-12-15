@@ -24,14 +24,14 @@
     <favorites_list name="myORM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5064378">
+    <splitter split-orientation="horizontal" split-proportion="0.48436543">
       <split-first>
         <leaf>
           <file leaf-file-name="generate.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/generate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.20759837" vertical-offset="0" max-vertical-offset="737">
-                  <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.18453188" vertical-offset="0" max-vertical-offset="737">
+                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -54,8 +54,8 @@
           <file leaf-file-name="classGenerator.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/classGenerator.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36906376" vertical-offset="85" max-vertical-offset="918">
-                  <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.8426052" vertical-offset="416" max-vertical-offset="1326">
+                  <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
                   <folding>
                     <element signature="e#6#95#0#PHP" expanded="true" />
                   </folding>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/autoload.php" />
         <option value="$PROJECT_DIR$/core/myORM.php" />
         <option value="$PROJECT_DIR$/core/generator.php" />
-        <option value="$PROJECT_DIR$/core/classGenerator.php" />
         <option value="$PROJECT_DIR$/generate.php" />
+        <option value="$PROJECT_DIR$/core/classGenerator.php" />
       </list>
     </option>
   </component>
@@ -439,21 +439,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/classGenerator.php">
+    <entry file="file://$PROJECT_DIR$/generate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36906376" vertical-offset="85" max-vertical-offset="918">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.18453188" vertical-offset="0" max-vertical-offset="737">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generate.php">
+    <entry file="file://$PROJECT_DIR$/core/classGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20759837" vertical-offset="0" max-vertical-offset="737">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.8426052" vertical-offset="416" max-vertical-offset="1326">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

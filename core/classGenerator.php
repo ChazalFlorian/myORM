@@ -36,7 +36,31 @@ class classGenerator{
      //}
 
      public function initNewClass(){
-        echo(" Creating new Entity".$this->DBClassName." on ".$this->DBName);
+        echo(" Creating new Entity ".$this->DBClassName." on ".$this->DBName."\n");
+         echo ("Testing Interactive Console \n");
+
+         //initialize interactive command prompt
+         $stdin = fopen("php://stdin", "r");
+         $exit = false;
+         while(!$exit)
+         {
+             echo ("Does this simple test works? (yes/no) - ");
+             $response = fgets($stdin);
+             //this line delete 2 characters at the input's end
+             $response = substr($response, 0, -2);
+             if($response == "yes")
+             {
+                 echo "response was Yes";
+                 $exit = true;
+             }elseif($response == "no")
+             {
+                 echo "response was No";
+             }
+             else
+             {
+                 echo "Wrong Statement";
+             }
+         }
      }
 
      public function addArgument($Argument = ""){
