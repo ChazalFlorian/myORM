@@ -9,9 +9,19 @@ class QueryBuilder{
 
     public function __construct(){
         $this->PDO = Connection::getConnection();
+    }
+
+    public function Select(){
         $this->Query = "SELECT * ";
     }
 
+    public function Count(){
+        $this->Query = "SELECT COUNT(*)";
+    }
+
+    public function Max($attribute){
+        $this->Query = "SELECT MAX(".$attribute.")";
+    }
 
     public function From($table){
         $this->Alias = substr(strtolower($table), 0, 1);

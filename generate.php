@@ -21,6 +21,7 @@ $book->setYear(1223);
 
 //Test for basic query
 $query = new QueryBuilder();
+$query->Select();
 $query->From('Book');
 $query->Join('a', 'author', 'id');
 $query->Where('name', '=', 'test');

@@ -37,10 +37,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="entityQuery.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="entityQuery.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/entityQuery.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8689249" vertical-offset="634" max-vertical-offset="1428">
+                <state vertical-scroll-proportion="-10.727273" vertical-offset="634" max-vertical-offset="1428">
                   <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
                   <folding>
                     <marker date="1450263939569" expanded="true" signature="316:354" placeholder="DELETE FROM ..." />
@@ -50,11 +50,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="generate.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="generate.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/generate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.4615383" vertical-offset="129" max-vertical-offset="816">
-                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+                <state vertical-scroll-proportion="0.6878531" vertical-offset="108" max-vertical-offset="833">
+                  <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
                   <folding>
                     <element signature="e#7#31#0#PHP" expanded="true" />
                   </folding>
@@ -69,8 +69,8 @@
           <file leaf-file-name="queryBuilder.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.76546764" vertical-offset="471" max-vertical-offset="1190">
-                  <caret line="59" column="35" selection-start-line="58" selection-start-column="12" selection-end-line="59" selection-end-column="35" />
+                <state vertical-scroll-proportion="0.5381295" vertical-offset="0" max-vertical-offset="1360">
+                  <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -105,10 +105,10 @@
         <option value="$PROJECT_DIR$/entity/Book.php" />
         <option value="$PROJECT_DIR$/logs/access.log" />
         <option value="$PROJECT_DIR$/core/log.php" />
-        <option value="$PROJECT_DIR$/generate.php" />
         <option value="$PROJECT_DIR$/core/myORM.php" />
-        <option value="$PROJECT_DIR$/core/queryBuilder.php" />
         <option value="$PROJECT_DIR$/core/entityQuery.php" />
+        <option value="$PROJECT_DIR$/core/queryBuilder.php" />
+        <option value="$PROJECT_DIR$/generate.php" />
       </list>
     </option>
   </component>
@@ -550,16 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4615383" vertical-offset="129" max-vertical-offset="816">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#7#31#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/classAttribute.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="833">
@@ -586,21 +576,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76546764" vertical-offset="471" max-vertical-offset="1190">
-          <caret line="59" column="35" selection-start-line="58" selection-start-column="12" selection-end-line="59" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/entityQuery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8689249" vertical-offset="634" max-vertical-offset="1428">
+        <state vertical-scroll-proportion="-10.727273" vertical-offset="634" max-vertical-offset="1428">
           <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
           <folding>
             <marker date="1450263939569" expanded="true" signature="316:354" placeholder="DELETE FROM ..." />
             <marker date="1450263939569" expanded="true" signature="532:567" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5381295" vertical-offset="0" max-vertical-offset="1360">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6878531" vertical-offset="108" max-vertical-offset="833">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="e#7#31#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
