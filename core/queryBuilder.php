@@ -12,6 +12,7 @@ class QueryBuilder{
         $this->Query = "SELECT * ";
     }
 
+
     public function From($table){
         $this->Alias = substr(strtolower($table), 0, 1);
         $this->Query .= "FROM ".$table." ".$this->Alias." ";
