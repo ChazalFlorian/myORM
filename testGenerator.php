@@ -8,8 +8,8 @@ use core\entityQuery;
 require_once('autoload.php');
 
 
-//$Entity = new classGenerator('localhost', 'root', '', 'myORM', 'Book', 'Book');
-//$Entity = new classGenerator('localhost', 'root', '', 'myORM', 'Author', 'Author');
+$Entity = new classGenerator('localhost', 'root', '', 'myORM', 'Book', 'Book');
+$Entity = new classGenerator('localhost', 'root', '', 'myORM', 'Author', 'Author');
 $ORM = new myORM(core\Connection::getConnection());
 //$ORM->getValueFromAnnotation('entity\Author');
 

@@ -11,60 +11,85 @@ class QueryBuilder{
         $this->PDO = Connection::getConnection();
     }
 
+    public function getPDO(){
+        return $this->PDO;
+    }
+
+    public function setQuery($query){
+        $this->Query = $query;
+    }
+
+    public function getQuery(){
+        return $this->Query;
+    }
+
+    public function addQuery($query){
+        $this->Query .= $query;
+    }
+
+    public function setAlias($alias){
+        $this->Alias = $alias;
+    }
+
+    public function getAlias(){
+        return $this->Alias;
+    }
+
+
+
     public function Select(){
-        $this->Query = "SELECT * ";
+        $this->setQuery("SELECT * ");
     }
 
     public function Count(){
-        $this->Query = "SELECT COUNT(*)";
-    }
-
-    public function Exists($from, $where, $value){
-        $this->Query .= "WHERE EXISTS ( SELECT * FROM ".$from." WHERE ".$where." = ".$value." )";
+        $this->setQuery("SELECT COUNT(*)");
     }
 
     public function Max($attribute){
-        $this->Query = "SELECT MAX(".$attribute.")";
+        $this->setQuery("SELECT MAX(".$attribute.")");
     }
 
     public function From($table){
-        $this->Alias = substr(strtolower($table), 0, 1);
-        $this->Query .= "FROM ".$table." ".$this->Alias." ";
+        $this->setAlias(substr(strtolower($table), 0, 1));
+        $this->addQuery("FROM ".$table." ".$this->Alias." ");
     }
 
     public function Where($attribute, $comparator, $value){
-        $this->Query .= "WHERE ".$this->Alias.".".$attribute." ".$comparator." '".$value."' ";
+        $this->addQuery("WHERE ".$this->Alias.".".$attribute." ".$comparator." '".$value."' ");
     }
 
     public function andWhere($attribute, $comparator, $value){
-        $this->Query .= "AND ".$this->Alias.".".$attribute." ".$comparator." ".$value." ";
+        $this->addQuery("AND ".$this->Alias.".".$attribute." ".$comparator." ".$value." ");
     }
 
     public function orWhere($attribute, $comparator, $value){
-        $this->Query .= "OR ".$this->Alias.".".$attribute." ".$comparator." ".$value." ";
+        $this->addQuery("OR ".$this->Alias.".".$attribute." ".$comparator." ".$value." ");
     }
 
     public function customWhere($query){
-        $this->Query.= $query." ";
+        $this->addQuery($query." ");
+    }
+
+    public function Exists($from, $where, $value){
+        $this->addQuery("WHERE EXISTS ( SELECT * FROM ".$from." WHERE ".$where." = ".$value." )");
     }
 
     public function Join($alias, $table, $link){
-        $this->Query .= "JOIN ".$table." ".$alias." ON ".$this->Alias.".".$table." = ".$alias.".".$link." ";
+        $this->addQuery("JOIN ".$table." ".$alias." ON ".$this->Alias.".".$table." = ".$alias.".".$link." ");
     }
 
     public function OrderBy($value = "ASC"){
-        $this->Query.= "ORDER BY ".$value." ";
+        $this->addQuery("ORDER BY ".$value." ");
     }
 
     public function prepareQuery(){
-        $this->Query.=";";
-        var_dump($this->Query);
+        $this->addQuery(";");;
     }
 
     public function executeQuery(){
         $log = new Log(date('Y-m-d H:i:s'));
         try{
-            $sth = $this->PDO->prepare($this->Query);
+            $sth = $this->getPDO()->prepare($this->getQuery());
             $sth->execute();
             $result = $sth->fetchAll();
             $log->setSQLQuery($this->Query);
