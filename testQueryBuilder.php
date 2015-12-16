@@ -1,6 +1,6 @@
 <?php
 
-use core\QueryBuilder;
+use core\Query\QueryBuilder;
 require_once('autoload.php');
 
 

@@ -1,7 +1,7 @@
 <?php
 
 use entity\Book;
-use core\entityQuery;
+use core\Query\entityQuery;
 
 require_once('autoload.php');
 

@@ -1,7 +1,7 @@
 <?php
 
-use core\classGenerator;
-use core\myORM;
+use core\Classes\classGenerator;
+use core\ORM\myORM;
 require_once('autoload.php');
 
 

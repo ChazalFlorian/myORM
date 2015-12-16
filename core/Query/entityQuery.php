@@ -1,6 +1,6 @@
 <?php
 
-namespace core;
+namespace core\Query;
 
 class  entityQuery{
     private $PDO;

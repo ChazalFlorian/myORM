@@ -5,7 +5,7 @@
  * Date: 09/12/2015
  * Time: 08:44
  */
-namespace core;
+namespace core\Classes;
 
 use core\classAttribute as Attribute;
 
