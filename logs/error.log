@@ -1,0 +1,1 @@
+[2015-12-16 11:58:09]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myormtest.autor' doesn't exist

@@ -59,12 +59,21 @@ class  entityQuery{
     }
 
     public function execute(){
+        $log = new Log(date('Y-m-d H:i:s'));
         $sth = $this->PDO->prepare($this->query);
-        $sth->execute();
-        if(isset($this->currentObject)){
-            $this->currentObject->setId($this->PDO->lastInsertId());
-            unset($this->currentObject);
+        try{
+            $sth->execute();
+            $log->setSQLQuery($this->query);
+            $log->setType("Access");
+            if(isset($this->currentObject)){
+                $this->currentObject->setId($this->PDO->lastInsertId());
+                unset($this->currentObject);
+            }
+            unset($this->query);
+        }catch(\PDOException $e){
+            $log->setSQLQuery($e->getMessage());
+            $log->setType("Error");
         }
-        unset($this->query);
+
     }
 }

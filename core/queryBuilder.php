@@ -48,13 +48,18 @@ class QueryBuilder{
     }
 
     public function executeQuery(){
+        $log = new Log(date('Y-m-d H:i:s'));
         try{
             $sth = $this->PDO->prepare($this->Query);
             $sth->execute();
             $result = $sth->fetchAll();
+            $log->setSQLQuery($this->Query);
+            $log->setType("Access");
         }catch (\PDOException $e){
-            echo $e->getMessage();
+            $log->setSQLQuery($e->getMessage());
+            $log->setType("Error");
         }
+        $log->stock();
         return $result;
     }
 }

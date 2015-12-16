@@ -69,10 +69,14 @@ class myORM{
                 $sql .= ");";
             }
         }
+        $log = new Log(date('Y-m-d H:i:s'));
         try{
             $this->getPDO()->exec($sql);
+            $log->setSQLQuery($sql);
+            $log->setType("Access");
         } catch(\PDOException $e){
-            echo $e->getMessage();
+            $log->setSQLQuery($e->getMessage());
+            $log->setType("Error");
         }
     }
 

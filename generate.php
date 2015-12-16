@@ -26,18 +26,17 @@ $query->Join('a', 'author', 'id');
 $query->Where('name', '=', 'test');
 $query->prepareQuery();
 $result = $query->executeQuery();
-var_dump($result);
 
 //test for hydrating data
-$queryEdit = new entityQuery();
-$queryEdit->persist($book);
-$queryEdit->execute();
+//$queryEdit = new entityQuery();
+//$queryEdit->persist($book);
+//$queryEdit->execute();
 
 //test for editing data
-$book->setYear(1334);
-$queryEdit->update($book);
-$queryEdit->execute();
+//$book->setYear(1334);
+//$queryEdit->update($book);
+//$queryEdit->execute();
 //test for deleting data
 
-$queryEdit->remove($book);
-$queryEdit->execute();
+//$queryEdit->remove($book);
+//$queryEdit->execute();
