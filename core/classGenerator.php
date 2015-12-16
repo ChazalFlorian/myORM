@@ -113,16 +113,52 @@ class classGenerator{
              {
                  echo "End of new Attributes \n";
                  $exit = true;
-                 var_dump($this->Attributes);
              }
          }
+         $this->generate();
      }
 
-     public function addArgument($Argument = ""){
-        $newArgument = "test";
-         if($Argument !== ""){
-             $this->addArgument($newArgument);
+     public function generate(){
+         echo "Now generating Class".$this->DBClassName." in entity/".$this->DBClassName.".php";
+
+         //First, initiate basic with an automatic Id value
+         $classContent= "<?php\n\n";
+         $classContent.="namespace entity;\n\n";
+         $classContent.= "class ".$this->DBClassName." {\n\n";
+         $classContent.= "\t private \$id;\n";
+
+
+         //Then, add attributes determined by the User
+         foreach($this->Attributes as $currentAttribute){
+             $classContent.= "\t private $".$currentAttribute->getName().";\n";
          }
+         $classContent.="\n";
+
+         //add setter/getter for ID attribute
+         $classContent.= "\t public function setId(\$id)\n";
+         $classContent.= "\t{\n";
+         $classContent.="\t\t\$this->id = \$id;\n";
+         $classContent.= "\t}\n\n";
+         $classContent.= "\t public function getId()\n";
+         $classContent.= "\t{\n";
+         $classContent.="\t\treturn \$this->id;\n";
+         $classContent.= "\t}\n\n";
+
+         //Then add getter/setter method for all
+         //Its a bit redundant, but the created class is more easily understandable this way
+         foreach($this->Attributes as $currentAttribute){
+             $classContent .= "\t public function set".$currentAttribute->getName()."($".$currentAttribute->getName().")\n";
+             $classContent .= "\t{\n";
+             $classContent .="\t\t\$this->".$currentAttribute->getName()." = $".$currentAttribute->getName().";\n";
+             $classContent .= "\t}\n\n";
+             $classContent .= "\tpublic function get".$currentAttribute->getName()."()\n";
+             $classContent .= "\t{\n";
+             $classContent .= "\t\t return \$this->".$currentAttribute->getName().";\n";
+             $classContent .= "\t}\n\n";
+         }
+
+         $classContent.="}";
+         file_put_contents("./entity/".$this->DBClassName.".php", $classContent);
      }
 
     
