@@ -33,9 +33,9 @@ class QueryBuilder{
         $this->Query.= $query." ";
     }
 
-    //public function Join(){
-    //
-    //}
+    public function Join($alias, $table, $link){
+        $this->Query .= "JOIN ".$table." ".$alias." ON ".$this->Alias.".".$table." = ".$alias.".".$link." ";
+    }
 
     public function OrderBy($value = "ASC"){
         $this->Query.= "ORDER BY ".$value." ";

@@ -3,9 +3,9 @@
 namespace entity;
 
 /**
-*Table: Book
+*Table: Author
 **/
-class Book {
+class Author {
 
 	/**
 	*Var: Id
@@ -16,21 +16,16 @@ class Book {
 	 private $id;
 	/**
 	*Var: name
-	*Type: text
+	*Type: string
+	*MaxLength: 120
 	**/
 	 private $name;
 
 	/**
-	*Var: author
-	*Type: Integer
+	*Var: style
+	*Type: text
 	**/
-	 private $author;
-
-	/**
-	*Var: year
-	*Type: date
-	**/
-	 private $year;
+	 private $style;
 
 
 	 public function setId($id)
@@ -53,24 +48,14 @@ class Book {
 		 return $this->name;
 	}
 
-	 public function setAuthor($author)
+	 public function setStyle($style)
 	{
-		$this->author = $author;
+		$this->style = $style;
 	}
 
-	public function getAuthor()
+	public function getStyle()
 	{
-		 return $this->author;
-	}
-
-	 public function setYear($year)
-	{
-		$this->year = $year;
-	}
-
-	public function getYear()
-	{
-		 return $this->year;
+		 return $this->style;
 	}
 
 }
