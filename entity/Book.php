@@ -4,10 +4,31 @@ namespace entity;
 
 class Book {
 
+	/**
+	*Var: Id
+	*Type: Integer
+	*Primary: True
+	*Auto: True
+	**/
 	 private $id;
+	/**
+	*Var: name
+	*Type: text
+	**/
 	 private $name;
+
+	/**
+	*Var: author
+	*Type: text
+	**/
 	 private $author;
+
+	/**
+	*Var: year
+	*Type: date
+	**/
 	 private $year;
+
 
 	 public function setId($id)
 	{
@@ -19,32 +40,32 @@ class Book {
 		return $this->id;
 	}
 
-	 public function setname($name)
+	 public function setName($name)
 	{
 		$this->name = $name;
 	}
 
-	public function getname()
+	public function getName()
 	{
 		 return $this->name;
 	}
 
-	 public function setauthor($author)
+	 public function setAuthor($author)
 	{
 		$this->author = $author;
 	}
 
-	public function getauthor()
+	public function getAuthor()
 	{
 		 return $this->author;
 	}
 
-	 public function setyear($year)
+	 public function setYear($year)
 	{
 		$this->year = $year;
 	}
 
-	public function getyear()
+	public function getYear()
 	{
 		 return $this->year;
 	}

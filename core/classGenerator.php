@@ -125,12 +125,23 @@ class classGenerator{
          $classContent= "<?php\n\n";
          $classContent.="namespace entity;\n\n";
          $classContent.= "class ".$this->DBClassName." {\n\n";
+         $classContent.= "\t/**\n";
+         $classContent.= "\t*Var: Id\n";
+         $classContent.= "\t*Type: Integer\n";
+         $classContent.= "\t*Primary: True\n";
+         $classContent.= "\t*Auto: True\n";
+         $classContent.= "\t**/\n";
          $classContent.= "\t private \$id;\n";
 
 
          //Then, add attributes determined by the User
          foreach($this->Attributes as $currentAttribute){
-             $classContent.= "\t private $".$currentAttribute->getName().";\n";
+             $classContent.= "\t/**\n";
+             $classContent.= "\t*Var: ".$currentAttribute->getName()."\n";
+             $classContent.= "\t*Type: ".$currentAttribute->getType()."\n";
+             if($currentAttribute->getMaxVal()){$classContent.="\t*MaxLength: ".$currentAttribute->getMaxVal()."\n";}
+             $classContent.= "\t**/\n";
+             $classContent.= "\t private $".$currentAttribute->getName().";\n\n";
          }
          $classContent.="\n";
 
@@ -147,11 +158,11 @@ class classGenerator{
          //Then add getter/setter method for all
          //Its a bit redundant, but the created class is more easily understandable this way
          foreach($this->Attributes as $currentAttribute){
-             $classContent .= "\t public function set".$currentAttribute->getName()."($".$currentAttribute->getName().")\n";
+             $classContent .= "\t public function set".ucfirst(strtolower($currentAttribute->getName()))."($".$currentAttribute->getName().")\n";
              $classContent .= "\t{\n";
              $classContent .="\t\t\$this->".$currentAttribute->getName()." = $".$currentAttribute->getName().";\n";
              $classContent .= "\t}\n\n";
-             $classContent .= "\tpublic function get".$currentAttribute->getName()."()\n";
+             $classContent .= "\tpublic function get".ucfirst(strtolower($currentAttribute->getName()))."()\n";
              $classContent .= "\t{\n";
              $classContent .= "\t\t return \$this->".$currentAttribute->getName().";\n";
              $classContent .= "\t}\n\n";
