@@ -4,14 +4,10 @@ namespace core;
 
 class myORM{
 
-    private $DBHost;
-    private $DBUser;
-    private $DBPass;
-    private $DBName;
     private $PDO;
 
-    public function __construct($DBHost, $DBUser, $DBPass, $DBName){
-        $this->PDO = new \PDO("'mysql:host=".$DBHost.";dbname=".$DBName."'", $DBUser, $DBPass);
+    public function __construct($PDO){
+        $this->PDO = $PDO;
     }
 
     public function getPDO(){
@@ -74,10 +70,9 @@ class myORM{
             }
         }
         var_dump($sql);
-            var_dump($this->getPDO());
         try{
             $this->getPDO()->exec($sql);
-        } catch(PDOException $e){
+        } catch(\PDOException $e){
             echo $e->getMessage();
         }
     }
@@ -107,7 +102,7 @@ class myORM{
             $line .= " PRIMARY KEY";
         }
         if(isset($SQLProperty['Auto'])){
-            $line .= " AUTO INCREMENT";
+            $line .= " AUTO_INCREMENT";
         }
         return $line;
     }
