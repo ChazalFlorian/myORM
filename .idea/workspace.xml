@@ -30,8 +30,8 @@
           <file leaf-file-name="generate.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/generate.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2045728" vertical-offset="0" max-vertical-offset="831">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="782">
+                  <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
                   <folding>
                     <element signature="e#7#31#0#PHP" expanded="true" />
                   </folding>
@@ -88,20 +88,30 @@
           <file leaf-file-name="myORM.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/myORM.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.181818" vertical-offset="1003" max-vertical-offset="2737">
-                  <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+                <state vertical-scroll-proportion="29.423077" vertical-offset="850" max-vertical-offset="1938">
+                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding>
-                    <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-                    <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+                    <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+                    <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Connection.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="queryBuilder.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.87798744" vertical-offset="254" max-vertical-offset="1088">
+                  <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/Connection.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4229858" vertical-offset="0" max-vertical-offset="844">
+                <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
                   <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                   <folding />
                 </state>
@@ -132,10 +142,11 @@
         <option value="$PROJECT_DIR$/core/classAttribute.php" />
         <option value="$PROJECT_DIR$/core/classGenerator.php" />
         <option value="$PROJECT_DIR$/core/Connexion.php" />
-        <option value="$PROJECT_DIR$/generate.php" />
         <option value="$PROJECT_DIR$/autoload.php" />
-        <option value="$PROJECT_DIR$/core/myORM.php" />
         <option value="$PROJECT_DIR$/core/Connection.php" />
+        <option value="$PROJECT_DIR$/core/myORM.php" />
+        <option value="$PROJECT_DIR$/core/queryBuilder.php" />
+        <option value="$PROJECT_DIR$/generate.php" />
       </list>
     </option>
   </component>
@@ -278,7 +289,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06943005" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12020726" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -334,8 +345,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-            <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
           </folding>
         </state>
       </provider>
@@ -373,8 +384,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-            <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
           </folding>
         </state>
       </provider>
@@ -412,8 +423,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-            <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
           </folding>
         </state>
       </provider>
@@ -449,8 +460,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-            <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
           </folding>
         </state>
       </provider>
@@ -470,8 +481,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-            <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
           </folding>
         </state>
       </provider>
@@ -493,14 +504,6 @@
           <folding>
             <element signature="e#6#95#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,17 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/myORM.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.181818" vertical-offset="1003" max-vertical-offset="2737">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
-          <folding>
-            <marker date="1450245541294" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
-            <marker date="1450245541294" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
@@ -551,16 +543,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4229858" vertical-offset="0" max-vertical-offset="844">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/myORM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="29.423077" vertical-offset="850" max-vertical-offset="1938">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1450246336416" expanded="true" signature="2625:2638" placeholder="Create TABLE..." />
+            <marker date="1450246336416" expanded="true" signature="2625:2666" placeholder="Create TABLE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87798744" vertical-offset="254" max-vertical-offset="1088">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2045728" vertical-offset="0" max-vertical-offset="831">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="782">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
             <element signature="e#7#31#0#PHP" expanded="true" />
           </folding>

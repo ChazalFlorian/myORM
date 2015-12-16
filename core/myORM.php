@@ -69,7 +69,6 @@ class myORM{
                 $sql .= ");";
             }
         }
-        var_dump($sql);
         try{
             $this->getPDO()->exec($sql);
         } catch(\PDOException $e){
@@ -107,50 +106,4 @@ class myORM{
         return $line;
     }
 
-}
-
-abstract class QueryBuilder{
-    private $Query;
-    private $Alias;
-
-    public function __construct(){
-        $this->Query = "SELECT * ";
-    }
-
-    public function From($table){
-        $this->Alias = substr(strtolower($table), 0, 1);
-        $this->Query .= "FROM ".$table." ".$this->Alias." ";
-    }
-
-    public function Where($attribute, $comparator, $value){
-        $this->Query .= "WHERE ".$this->Alias.".".$attribute." ".$comparator." ".$value." ";
-    }
-
-    public function andWhere($attribute, $comparator, $value){
-        $this->Query .= "AND ".$this->Alias.".".$attribute." ".$comparator." ".$value." ";
-    }
-
-    public function orWhere($attribute, $comparator, $value){
-        $this->Query .= "OR ".$this->Alias.".".$attribute." ".$comparator." ".$value." ";
-    }
-
-    public function customWhere($query){
-        $this->Query.= $query." ";
-    }
-
-    //public function Join(){
-    //
-    //}
-
-    public function OrderBy($value = "ASC"){
-        $this->Query.= "ORDER BY ".$value." ";
-    }
-
-    public function prepareQuery(){
-        $this->Query.=";";
-    }
-
-    public function executeQuery(){
-
-    }
 }
