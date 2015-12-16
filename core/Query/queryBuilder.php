@@ -8,7 +8,7 @@ class QueryBuilder{
     private $PDO;
 
     public function __construct(){
-        $this->PDO = Connection::getConnection();
+        $this->PDO = \core\Connection::getConnection();
     }
 
     public function getPDO(){

@@ -7,7 +7,7 @@
  */
 namespace core\Classes;
 
-use core\classAttribute as Attribute;
+use core\Classes\classAttribute as Attribute;
 
 class classGenerator{
 
