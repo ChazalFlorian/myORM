@@ -7,6 +7,8 @@
  */
 namespace core;
 
+use core\classAttribute as Attribute;
+
 class classGenerator{
 
      private $DBHost;
@@ -15,6 +17,7 @@ class classGenerator{
      private $DBName;
      private $DBTableName;
      private $DBClassName;
+     protected $Attributes;
 
      public function __construct($DBHost, $DBUser, $DBPass, $DBName, $DBTableName, $DBClassName){
          $this->DBHost = $DBHost;
@@ -23,42 +26,84 @@ class classGenerator{
          $this->DBName = $DBName;
          $this->DBTableName = $DBTableName;
          $this->DBClassName = $DBClassName;
+         $this->Attributes = array();
          $this->initNewClass();
      }
 
-     //public function __contruct($DBHost, $DBUser, $DBPass, $DBName, $DBClass){
-     //   $this->DBHost = $DBHost;
-     //    $this->DBUser = $DBUser;
-     //    $this->DBPass = $DBPass;
-     //    $this->DBName = $DBName;
-     //    $this->DBTableName = $DBClass;
-     //    $this->DBClassName = $DBClass;
-     //}
-
-     public function initNewClass(){
-        echo(" Creating new Entity ".$this->DBClassName." on ".$this->DBName."\n");
-         echo ("Testing Interactive Console \n");
+     public function initNewClass()
+     {
+         echo(" Creating new Entity ".$this->DBClassName." on ".$this->DBName."\n");
+         echo ("Now we will add attributes to".$this->DBClassName."\n");
 
          //initialize interactive command prompt
          $stdin = fopen("php://stdin", "r");
          $exit = false;
          while(!$exit)
          {
-             echo ("Does this simple test works? (yes/no) - ");
-             $response = fgets($stdin);
-             //this line delete 2 characters at the input's end
-             $response = substr($response, 0, -2);
-             if($response == "yes")
+             echo ("Attribute Name: - ");
+
+             $responseAttribute = fgets($stdin);
+             //this line delete 2 unwanted characters at the input's end
+             $responseAttribute = substr($responseAttribute, 0, -2);
+
+             if($responseAttribute != "")
              {
-                 echo "response was Yes";
-                 $exit = true;
-             }elseif($response == "no")
-             {
-                 echo "response was No";
+                 $attribute = new Attribute($responseAttribute);
+                 echo ("Possible values are: text, string, integer, boolean, date. \n");
+
+                 $responseType = fgets($stdin);
+                 $responseType = substr($responseType, 0, -2);
+
+                 switch($responseType){
+                     case "text":
+                         $attribute->setType("text");
+                         array_push($this->Attributes, $attribute);
+                         break;
+                     case "string":
+                         $stringExit = false;
+                         $attribute->setType("string");
+                         echo ("Max character values? (default: 255)\n");
+                         while(!$stringExit)
+                         {
+                             $responseValue = fgets($stdin);
+                             $responseValue = substr($responseValue, 0, -2);
+
+                             if($responseValue == "")
+                             {
+                                 $attribute->setMaxVal(255);
+                                 $stringExit = true;
+                                 array_push($this->Attributes, $attribute);
+                             }
+                             elseif(intval($responseValue) !== 0)
+                             {
+                                 $attribute->setMaxVal($responseValue);
+                                 $stringExit = true;
+                                 array_push($this->Attributes, $attribute);
+                             } else
+                             {
+                                 echo "Please enter proper integer value \n";
+                             }
+                         }
+                         break;
+                     case "integer":
+                         $attribute->setType("integer");
+                         array_push($this->Attributes, $attribute);
+                         break;
+                     case "boolean":
+                         $attribute->setType("boolean");
+                         array_push($this->Attributes, $attribute);
+                         break;
+                     case "date":
+                         $attribute->setType("date");
+                         array_push($this->Attributes, $attribute);
+                         break;
+                 }
              }
              else
              {
-                 echo "Wrong Statement";
+                 echo "End of new Attributes \n";
+                 $exit = true;
+                 var_dump($this->Attributes);
              }
          }
      }
@@ -69,5 +114,6 @@ class classGenerator{
              $this->addArgument($newArgument);
          }
      }
+
     
 }
