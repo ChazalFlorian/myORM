@@ -1,1 +1,1 @@
-[2015-12-16 11:57:33]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myormtest.autor' doesn't exist
+[2015-12-16 15:20:58]SELECT COUNT(*) FROM Book b WHERE b.name = 'testagain' ;

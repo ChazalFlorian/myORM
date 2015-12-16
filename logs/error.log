@@ -1,1 +1,1 @@
-[2015-12-16 11:58:09]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myormtest.autor' doesn't exist
+[2015-12-16 15:12:20]SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected

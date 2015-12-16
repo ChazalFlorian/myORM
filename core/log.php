@@ -37,9 +37,13 @@ class Log{
 
     public function stock(){
         if($this->getType() == "Error"){
-            file_put_contents("./logs/error.log","[".$this->getDate()."]".$this->getSQLQuery());
+            $file = file_get_contents("./logs/error.log");
+            $file .= "[".$this->getDate()."]".$this->getSQLQuery();
+            file_put_contents("./logs/error.log",$file);
         }else{
-            file_put_contents("./logs/access.log","[".$this->getDate()."]".$this->getSQLQuery());
+            $file = file_get_contents("./logs/access.log");
+            $file .= "[".$this->getDate()."]".$this->getSQLQuery();
+            file_put_contents("./logs/access.log",$file);
         }
     }
 

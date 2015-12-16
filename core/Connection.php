@@ -4,14 +4,14 @@ namespace core;
 
 class Connection extends \PDO
 {
-    private $DBHost;
-    private $DBUser;
-    private $DBPass;
-    private $DBName;
+    private static $DBHost;
+    private static $DBUser;
+    private static $DBPass='';
+    private static $DBName;
     private static $pdo;
 
     public function __construct(){
-        parent::__construct('mysql:host='.$this->DBHost.';dbname='.$this->DBName, $this->DBUser, $this->DBPass, [
+        parent::__construct('mysql:host='.self::$DBHost.';dbname='.self::$DBName, self::$DBUser, self::$DBPass, [
             \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
         ]);
     }
@@ -23,19 +23,19 @@ class Connection extends \PDO
         return self::$pdo;
     }
 
-    public function setDBHost($DBHost){
-        $this->DBHost = $DBHost;
+    public static function setDBHost($DBHost){
+        self::$DBHost = $DBHost;
     }
 
-    public function setDBUser($DBUser){
-        $this->DBUser = $DBUser;
+    public static function setDBUser($DBUser){
+        self::$DBUser = $DBUser;
     }
 
-    public function setDBPass($DBPass){
-        $this->DBPass = $DBPass;
+    public static function setDBPass($DBPass){
+        self::$DBPass = $DBPass;
     }
 
-    public function setDBName($DBName){
-        $this->DBName = $DBName;
+    public static function setDBName($DBName){
+        self::$DBName = $DBName;
     }
 }

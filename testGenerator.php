@@ -10,4 +10,3 @@ $Entity = new classGenerator('myORM', 'Author', 'Author');
 $ORM = new myORM(core\Connection::getConnection());
 $ORM->getValueFromAnnotation('entity\Book');
 $ORM->getValueFromAnnotation('entity\Author');
-

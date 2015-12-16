@@ -35,14 +35,12 @@ class QueryBuilder{
         return $this->Alias;
     }
 
-
-
     public function Select(){
         $this->setQuery("SELECT * ");
     }
 
     public function Count(){
-        $this->setQuery("SELECT COUNT(*)");
+        $this->setQuery("SELECT COUNT(*) ");
     }
 
     public function Max($attribute){
@@ -90,6 +88,7 @@ class QueryBuilder{
         $log = new Log(date('Y-m-d H:i:s'));
         try{
             $sth = $this->getPDO()->prepare($this->getQuery());
+            echo $this->getQuery();
             $sth->execute();
             $result = $sth->fetchAll();
             $log->setSQLQuery($this->Query);
