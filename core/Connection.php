@@ -4,10 +4,10 @@ namespace core;
 
 class Connection extends \PDO
 {
-    private static $DBHost;
-    private static $DBUser;
+    private static $DBHost ="localhost";
+    private static $DBUser ="root";
     private static $DBPass='';
-    private static $DBName;
+    private static $DBName="myormtest";
     private static $pdo;
 
     public function __construct(){

@@ -85,7 +85,7 @@ class QueryBuilder{
     }
 
     public function executeQuery(){
-        $log = new Log(date('Y-m-d H:i:s'));
+        $log = new \core\Log\Log(date('Y-m-d H:i:s'));
         try{
             $sth = $this->getPDO()->prepare($this->getQuery());
             echo $this->getQuery();

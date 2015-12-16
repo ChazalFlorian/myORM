@@ -83,7 +83,7 @@ class  entityQuery{
     }
 
     public function execute(){
-        $log = new Log(date('Y-m-d H:i:s'));
+        $log = new \core\Log\Log(date('Y-m-d H:i:s'));
         $sth = $this->getPDO()->prepare($this->getQuery());
         try{
             $sth->execute();

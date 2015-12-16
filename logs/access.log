@@ -1,1 +1,1 @@
-[2015-12-16 15:20:58]SELECT COUNT(*) FROM Book b WHERE b.name = 'testagain' ;
+[2015-12-16 15:20:58]SELECT COUNT(*) FROM Book b WHERE b.name = 'testagain' ;[2015-12-16 17:30:51]SELECT * FROM Book b JOIN author a ON b.author = a.id WHERE b.name = 'test' ;[2015-12-16 17:30:51]SELECT COUNT(*) FROM Book b WHERE b.name = 'testagain' ;
