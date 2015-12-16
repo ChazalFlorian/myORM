@@ -19,6 +19,10 @@ class QueryBuilder{
         $this->Query = "SELECT COUNT(*)";
     }
 
+    public function Exists($from, $where, $value){
+        $this->Query .= "WHERE EXISTS ( SELECT * FROM ".$from." WHERE ".$where." = ".$value." )";
+    }
+
     public function Max($attribute){
         $this->Query = "SELECT MAX(".$attribute.")";
     }

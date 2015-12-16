@@ -69,8 +69,8 @@
           <file leaf-file-name="queryBuilder.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5381295" vertical-offset="0" max-vertical-offset="1360">
-                  <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+                <state vertical-scroll-proportion="0.6604317" vertical-offset="0" max-vertical-offset="1428">
+                  <caret line="27" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -107,8 +107,8 @@
         <option value="$PROJECT_DIR$/core/log.php" />
         <option value="$PROJECT_DIR$/core/myORM.php" />
         <option value="$PROJECT_DIR$/core/entityQuery.php" />
-        <option value="$PROJECT_DIR$/core/queryBuilder.php" />
         <option value="$PROJECT_DIR$/generate.php" />
+        <option value="$PROJECT_DIR$/core/queryBuilder.php" />
       </list>
     </option>
   </component>
@@ -587,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5381295" vertical-offset="0" max-vertical-offset="1360">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6878531" vertical-offset="108" max-vertical-offset="833">
@@ -602,6 +594,14 @@
           <folding>
             <element signature="e#7#31#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/queryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6604317" vertical-offset="0" max-vertical-offset="1428">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
