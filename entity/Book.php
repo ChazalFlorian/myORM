@@ -2,6 +2,9 @@
 
 namespace entity;
 
+/**
+*Table: Book
+**/
 class Book {
 
 	/**
@@ -19,7 +22,8 @@ class Book {
 
 	/**
 	*Var: author
-	*Type: text
+	*Type: string
+	*MaxLength: 123
 	**/
 	 private $author;
 

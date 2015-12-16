@@ -124,6 +124,9 @@ class classGenerator{
          //First, initiate basic with an automatic Id value
          $classContent= "<?php\n\n";
          $classContent.="namespace entity;\n\n";
+         $classContent.="/**\n";
+         $classContent.="*Table: ".$this->DBTableName."\n";
+         $classContent.="**/\n";
          $classContent.= "class ".$this->DBClassName." {\n\n";
          $classContent.= "\t/**\n";
          $classContent.= "\t*Var: Id\n";
