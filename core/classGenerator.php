@@ -11,18 +11,12 @@ use core\classAttribute as Attribute;
 
 class classGenerator{
 
-     private $DBHost;
-     private $DBUser;
-     private $DBPass;
      private $DBName;
      private $DBTableName;
      private $DBClassName;
      protected $Attributes;
 
-     public function __construct($DBHost, $DBUser, $DBPass, $DBName, $DBTableName, $DBClassName){
-         $this->DBHost = $DBHost;
-         $this->DBUser = $DBUser;
-         $this->DBPass = $DBPass;
+     public function __construct($DBName, $DBTableName, $DBClassName){
          $this->DBName = $DBName;
          $this->DBTableName = $DBTableName;
          $this->DBClassName = $DBClassName;
