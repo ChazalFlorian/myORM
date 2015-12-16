@@ -40,7 +40,7 @@
           <file leaf-file-name="classAttribute.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/classAttribute.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.073275864" vertical-offset="0" max-vertical-offset="833">
+                <state vertical-scroll-proportion="0.06719368" vertical-offset="0" max-vertical-offset="833">
                   <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
                 </state>
@@ -64,8 +64,8 @@
           <file leaf-file-name="classGenerator.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/classGenerator.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8448023" vertical-offset="715" max-vertical-offset="2108">
-                  <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+                <state vertical-scroll-proportion="1.7815013" vertical-offset="490" max-vertical-offset="2278">
+                  <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
                   <folding>
                     <element signature="e#6#95#0#PHP" expanded="true" />
                   </folding>
@@ -227,7 +227,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22279793" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15751295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -460,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/classAttribute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073275864" vertical-offset="0" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.06719368" vertical-offset="0" max-vertical-offset="833">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
@@ -468,8 +468,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/classGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8448023" vertical-offset="715" max-vertical-offset="2108">
-          <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+        <state vertical-scroll-proportion="1.7815013" vertical-offset="490" max-vertical-offset="2278">
+          <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
           <folding>
             <element signature="e#6#95#0#PHP" expanded="true" />
           </folding>

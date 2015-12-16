@@ -54,51 +54,61 @@ class classGenerator{
                  $responseType = fgets($stdin);
                  $responseType = substr($responseType, 0, -2);
 
-                 switch($responseType){
-                     case "text":
-                         $attribute->setType("text");
-                         array_push($this->Attributes, $attribute);
-                         break;
-                     case "string":
-                         $stringExit = false;
-                         $attribute->setType("string");
-                         echo ("Max character values? (default: 255)\n");
-                         while(!$stringExit)
-                         {
-                             $responseValue = fgets($stdin);
-                             $responseValue = substr($responseValue, 0, -2);
+                     switch($responseType){
 
-                             if($responseValue == "")
+                         case "text":
+                             $attribute->setType("text");
+                             array_push($this->Attributes, $attribute);
+                             break;
+
+                         case "string":
+                             $stringExit = false;
+                             $attribute->setType("string");
+
+                             echo ("Max character values? (default: 255)\n");
+
+                             while(!$stringExit)
                              {
-                                 $attribute->setMaxVal(255);
-                                 $stringExit = true;
-                                 array_push($this->Attributes, $attribute);
+                                 $responseValue = fgets($stdin);
+                                 $responseValue = substr($responseValue, 0, -2);
+
+                                 if($responseValue == "")
+                                 {
+                                     $attribute->setMaxVal(255);
+                                     $stringExit = true;
+                                     array_push($this->Attributes, $attribute);
+                                 }
+                                 elseif(intval($responseValue) !== 0)
+                                 {
+                                     $attribute->setMaxVal($responseValue);
+                                     $stringExit = true;
+                                     array_push($this->Attributes, $attribute);
+                                 } else
+                                 {
+                                     echo "Please enter proper integer value \n";
+                                 }
                              }
-                             elseif(intval($responseValue) !== 0)
-                             {
-                                 $attribute->setMaxVal($responseValue);
-                                 $stringExit = true;
-                                 array_push($this->Attributes, $attribute);
-                             } else
-                             {
-                                 echo "Please enter proper integer value \n";
-                             }
-                         }
-                         break;
-                     case "integer":
-                         $attribute->setType("integer");
-                         array_push($this->Attributes, $attribute);
-                         break;
-                     case "boolean":
-                         $attribute->setType("boolean");
-                         array_push($this->Attributes, $attribute);
-                         break;
-                     case "date":
-                         $attribute->setType("date");
-                         array_push($this->Attributes, $attribute);
-                         break;
+                             break;
+
+                         case "integer":
+                             $attribute->setType("integer");
+                             array_push($this->Attributes, $attribute);
+                             break;
+
+                         case "boolean":
+                             $attribute->setType("boolean");
+                             array_push($this->Attributes, $attribute);
+                             break;
+
+                         case "date":
+                             $attribute->setType("date");
+                             array_push($this->Attributes, $attribute);
+                             break;
+
+                         default:
+                             echo ("Please enter a acceptable Type \n");
+                     }
                  }
-             }
              else
              {
                  echo "End of new Attributes \n";
